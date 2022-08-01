@@ -42,7 +42,7 @@ int main()
 
     eVehiculo test=nuevoVehiculo();
     nuevoVehiculoParam(&test,1,"Renault",12,12.4);
-
+/*
     strcpy(data,"id: ");
     strcat(data,test.id);
     strcat(data,"\nMarca: ");
@@ -56,6 +56,12 @@ int main()
     archivo=fopen("data","w");
     fwrite(archivo,data);
     fclose(archivo)
-    printf("marca %s\n",data);
+*/
+
+    printf("id %d\n",test.id);
+    printf("marca %s\n",test.marca);
+    printf("tipo %d\n",test.tipo);
+    printf("peso %f\n",test.peso);
+
     return 0;
 }
