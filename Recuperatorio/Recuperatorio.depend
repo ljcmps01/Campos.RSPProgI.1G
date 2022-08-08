@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1659997132 source:c:\users\ljcmp\onedrive\escritorio\programas\utn\programacion\campos.rspprogi.1g\recuperatorio\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

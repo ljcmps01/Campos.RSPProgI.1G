@@ -1,0 +1,4 @@
+id: 1
+marca:    Renault
+tipo: 12
+peso: 12.40
