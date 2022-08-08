@@ -36,11 +36,8 @@ int nuevoVehiculoParam(eVehiculo *pVehiculo, int id, char* marca, int tipo, floa
 
 int main()
 {
-    int vector=20;
-    printf("%d\n",*(&vector));
-
     FILE *archivo;
-    char data[256];
+
     eVehiculo test=nuevoVehiculo();
     nuevoVehiculoParam(&test,1,"Renault",12,12.4);
 
@@ -53,13 +50,6 @@ int main()
     archivo=fopen("data.txt","w");
     fprintf(archivo,"id: %d\nmarca: %10s\ntipo: %d\npeso: %.2f\n",test.id,test.marca,test.tipo,test.peso);
     fclose(archivo);
-
-    archivo=fopen("data.txt","r");
-    fscanf(archivo,"%256s",&data);
-    fclose(archivo);
-
-    printf("%s\n",data);
-
 
     //archivo=fopen("data.txt","wb");
     //fwrite();
